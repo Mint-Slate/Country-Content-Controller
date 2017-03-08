@@ -3,11 +3,11 @@
  * Plugin Name: Country Content Controller
  * Description: This plugin will use the API from http://ip-api.com/ and block/show content based off users country
  * Version: 1.0
- * Author: Shawn Kemp
- * Author URI: http://besmartdesigns.com
+ * Author: Mint Slate
+ * Author URI: http://mintslate.com
  * License: GPL2
  */
-/*  Copyright 2016  Shawn Kemp
+/*  Copyright 2016  Mint Slate
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as
     published by the Free Software Foundation.
@@ -19,8 +19,6 @@
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 **************************************************************************/
-// Report all errors except E_NOTICE
-error_reporting(E_ALL & ~E_NOTICE);
 // Define CCC Plugin
 define( 'WPCCC_PLUGIN_VERSION', '1.0' );
 define( 'WPCCC_PLUGIN__MINIMUM_WP_VERSION', '4.5' );
@@ -34,8 +32,8 @@ function CCC_enqueue()
     // JS
     wp_register_script('CCC_bootstrap', plugin_dir_url( __FILE__ ) . '/include/js/bootstrap.min.js');
     wp_enqueue_script('CCC_bootstrap');
-    wp_register_script('CCC_jquery', plugin_dir_url( __FILE__ ) . '/include/js/jquery.min.js');
-    wp_enqueue_script('CCC_jquery');
+    wp_enqueue_script('jquery');
+
     // CSS
     wp_register_style('CCC_bootstrap', plugin_dir_url( __FILE__ ) . '/include/css/bootstrap.min.css');
     wp_enqueue_style('CCC_bootstrap');
