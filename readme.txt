@@ -1,9 +1,9 @@
 === Plugin Name ===
-Contributors: skemp45
-Donate link: 
-Tags: country, hide, content, block
+Contributors: skemp45, mintslate
+Donate link:
+Tags: country, hide, content, block, mintslate, hide div,
 Requires at least: 4.5.0
-Tested up to: 4.7.0
+Tested up to: 4.7.3
 Stable tag: 4.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,9 +12,9 @@ Country Content Controller will use the API from http://ip-api.com/ and block/sh
 
 == Description ==
 
-Country Content Controller allows a website owner the ability to hide/show divs to specific countries. This is done through the use of shortcodes on the specific page you want the content hidden. 
+Country Content Controller allows a website owner the ability to hide/show divs to specific countries. This is done through the use of shortcodes on the specific page you want the content hidden.
 
-We use the api from http://ip-api.com/ to find the users country. 
+We use the api from http://ip-api.com/ to find the users country.
 
 == Installation ==
 
@@ -31,11 +31,13 @@ No dependents to worry about
 
 Currently you can not, you would have to put multiple shortcodes. In the next release we wll provide this ability.
 
+= CCC wont pull the users country code so it does not work =
 
+We suggest you enable or have your host enable fopen as ht eplugin uses file_get_contents()
 
 == Screenshots ==
 
-1. The CCC admin settings page provides a full breakdown on how to use this plugin. 
+1. The CCC admin settings page provides a full breakdown on how to use this plugin.
 2. An example of using the shortcode on a page
 
 == Changelog ==
