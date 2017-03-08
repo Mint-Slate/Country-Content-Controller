@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: skemp45, mintslate
-Donate link:
+Donate link:#
 Tags: country, hide, content, block, mintslate, hide div,
 Requires at least: 4.5.0
 Tested up to: 4.7.3
